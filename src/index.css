@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body {
+    @apply bg-papel font-sans text-carbon antialiased;
+    /* Textura de papel muy sutil */
+    background-image: radial-gradient(rgba(33, 57, 91, 0.035) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+  h1, h2, h3 { @apply font-titulo; }
+  :focus-visible { outline: 3px solid #E0A83B; outline-offset: 2px; }
+}
+
+@layer components {
+  .renglon { @apply border-b border-dashed border-tinta/20; }
+  .sello { @apply inline-block -rotate-3 rounded border-[3px] border-current px-3 py-1 font-titulo font-bold uppercase tracking-widest; }
+  .tabla { @apply w-full text-left text-sm; }
+  .tabla th { @apply border-b-2 border-tinta/30 px-2 py-2 text-xs font-bold uppercase tracking-wider text-tinta/70; }
+  .tabla td { @apply border-b border-tinta/10 px-2 py-2 align-top; }
+}
+
+@media print {
+  .no-imprimir { display: none !important; }
+  body { background: #fff; }
+}
