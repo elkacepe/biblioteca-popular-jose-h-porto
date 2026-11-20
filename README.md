@@ -7,6 +7,18 @@ La idea central: **no se venden productos con cantidades, se venden ejemplares �
 Cada copia tiene un código (`PJ-01023`), una sola ubicación y un solo estado. Toda operación que cambia
 estado, stock, cupo o dinero se resuelve **dentro de la base, en una sola transacción**, con las filas bloqueadas.
 
+## Entrega
+
+| | |
+|---|---|
+| **Previsualización** | <https://biblioteca-popular-jose-h-porto.vercel.app/> |
+| **Repositorio** | <https://github.com/elkacepe/biblioteca-popular-jose-h-porto> |
+| **Base de datos** | Proyecto Supabase `biblioteca-porto` (región São Paulo), instalado desde cero con `supabase/instalar_todo.sql` |
+| **SQL** | `supabase/migrations/` (7 archivos), `supabase/seed.sql`, `supabase/instalar_todo.sql` |
+| **Variables** | `.env.example` (solo nombres y valores de prueba; ninguna clave secreta) |
+| **Cuentas de prueba** | ver sección 1.3 · contraseña `Porto2026!` |
+| **Caso del briefing** | ver sección 2 bis |
+
 ---
 
 ## 1. Cómo arrancar
