@@ -80,6 +80,7 @@ supabase/
     …004_datos_base.sql   configuración, categorías, zonas y ubicaciones de prueba
     …005_demo.sql         datos de demostración y reiniciar_demo()
     …006_informes.sql     funciones de informes (solo lectura)
+    …007_search_path.sql  ajuste de seguridad pedido por el linter de Supabase
   seed.sql                cuentas de Auth de prueba + carga de la demo
   instalar_todo.sql       migraciones + seed en un solo archivo (para pegar en el SQL Editor)
   tests/
